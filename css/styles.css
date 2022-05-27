@@ -1,0 +1,310 @@
+/* Палітра кольорів */
+/* primary-text-color: #212121;
+    second-text-color: #757575;
+    accent-color: #2196f3;
+    accent-color-text: #ffffff;
+    background-header: #ffffff;
+    background-efect: #2f303a;
+    background-ourteam-color: #f5f4fa;
+    line-header: #ececec;
+    background-buttom: #f5f4fa;
+    background-buttom-accent: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow-buttom-studio: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    background-box: #ffffff;
+    border-color: #eeeeee;
+    footerbackground-color: #2f303a;
+    footer-text: rgba(255, 255, 255, 0.6);
+    footer-text-color: #ffffff; */
+
+:root {
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+  --accent-color-text: #ffffff;
+  --background-header: #ffffff;
+  --background-efect: #2f303a;
+  --background-ourteam-color: #f5f4fa;
+  --line-header: #ececec;
+  --background-buttom: #f5f4fa;
+  --background-buttom-accent: #2196f3;
+  --background-buttom-zakaz-hover: #188ce8;
+  --box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --box-shadow-buttom-studio: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --box-shadow-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --background-color: #ffffff;
+  --background-box: #ffffff;
+  --background-img-team: #ffffff;
+  --border-color: #eeeeee;
+  --footerbackground-color: #2f303a;
+  --footer-text: rgba(255, 255, 255, 0.6);
+  --footer-text-color: #ffffff;
+}
+
+body {
+  color: var(--primary-text-color);
+  background: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  background: var(--background-header);
+}
+.list,
+a {
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* логотип WebStudio */
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.header-logoblack {
+  color: var(--primary-text-color);
+}
+
+/* навігація Студия */
+.headerlink {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-nav .headerlink.current {
+  color: var(--accent-color);
+}
+.header-nav .headerlink:hover,
+.header-nav .headerlink:focus {
+  color: var(--accent-color);
+}
+
+/* мейл і тел */
+.headermail,
+.headertel {
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.headermail:hover,
+.headermail:focus {
+  color: var(--accent-color);
+}
+.headertel:hover,
+.headertel:focus {
+  color: var(--accent-color);
+}
+
+/* фильтр */
+.filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background: var(--background-buttom);
+  border-radius: 4px;
+}
+.vse {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+.vse:hover,
+.vse:focus {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+}
+.vse:active {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+}
+.web {
+  cursor: pointer;
+}
+.web:hover,
+.web:focus {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+}
+.pril {
+  cursor: pointer;
+}
+.pril:hover,
+.pril:focus {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+}
+.diz {
+  cursor: pointer;
+}
+.diz:hover,
+.diz:focus {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+}
+.market {
+  cursor: pointer;
+}
+.market:hover,
+.market:focus {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-accent);
+}
+
+/* project  */
+.project-big {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.project-small {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--second-text-color);
+}
+.box {
+  box-sizing: border-box;
+  background: var(--background-box);
+  border: 1px solid var(--border-color);
+}
+
+/* підвал */
+.footer {
+  background: var(--footerbackground-color);
+}
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.footer-logowhite {
+  color: var(--accent-color-text);
+}
+.footer-address {
+  font-style: inherit;
+}
+
+.footer-streat {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-text-color);
+}
+.footer-item > a:hover,
+.footer-item > a:focus {
+  color: var(--accent-color);
+}
+.footermail-link,
+.footertel-link {
+  letter-spacing: 0.03em;
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+/* css index */
+
+/* ефективне рішення */
+.efect {
+  background-color: var(--background-efect);
+}
+.texth1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-color-text);
+}
+/* кнопка */
+.button-zakaz {
+  font-family: inherit;
+  box-shadow: var(--box-shadow-buttom-studio);
+  border-radius: 4px;
+  color: var(--accent-color-text);
+  background: var(--background-buttom-accent);
+}
+.button-zakaz:hover,
+.button-zakaz:focus {
+  color: var(--accent-color-text);
+  background-color: var(--background-buttom-zakaz-hover);
+}
+/* особливості */
+.special-big {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+/* застосовано іншу специфічність css */
+.special .small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+
+/* чим ми займаємося */
+.chem-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+}
+
+/* наша команда */
+.ourteam {
+  background: var(--background-ourteam-color);
+}
+.team-item {
+  background-color: var(--background-img-team);
+}
+.ourteam-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+}
+.teamtext-big {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--primary-text-color);
+}
+
+.teamtext-small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--second-text-color);
+}
