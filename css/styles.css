@@ -31,7 +31,7 @@
   --background-header: #ffffff;
   --background-efect: #2f303a;
   --background-ourteam-color: #f5f4fa;
-  --line-header: #ececec;
+  --border-card-project-line: 1px solid #eeeeee;
   --background-buttom: #f5f4fa;
   --background-buttom-accent: #2196f3;
   --background-buttom-zakaz-hover: #188ce8;
@@ -47,7 +47,7 @@
   --footerbackground-color: #2f303a;
   --footer-text: rgba(255, 255, 255, 0.6);
   --footer-text-color: #ffffff;
-  --barder-line: 1px solid #ececec;
+  --border-line: 1px solid #ececec;
 }
 /* html {
   box-sizing: border-box;
@@ -94,7 +94,7 @@ body {
   letter-spacing: 0.03em;
 }
 .header {
-  border-bottom: var(--barder-line);
+  border-bottom: var(--border-line);
   background: var(--background-header);
 }
 .conteiner {
@@ -279,7 +279,7 @@ body {
   background-color: var(--background-buttom-accent);
 }
 
-/* project  */
+/* project  сєтка*/
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -295,9 +295,15 @@ body {
   /* border: 1px solid var(--border-color); */
 }
 
-/* CARD SET */
-
+/* CARD SET PROJECT*/
+.card-content-project {
+  padding: 20px 24px;
+}
+.card-project {
+  border: var(--border-card-project-line);
+}
 .project-big {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -455,7 +461,7 @@ body {
   text-align: center;
   color: var(--primary-text-color);
 }
-/* Карточки наша команда */
+/* CARD SET OUR TEAM */
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -476,7 +482,6 @@ body {
 .card-content {
   padding: 30px 0px;
 }
-
 .teamtext-big {
   padding-left: 60px;
   padding-right: 59px;
@@ -488,7 +493,6 @@ body {
 }
 .teamtext-small {
   padding-left: 70px;
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
