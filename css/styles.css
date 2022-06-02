@@ -40,6 +40,7 @@
   --box-shadow-buttom-studio: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --box-shadow-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  --border-radius-card-team: 0px 0px 4px 4px;
   --background-color: #ffffff;
   --background-box: #ffffff;
   --background-img-team: #ffffff;
@@ -316,50 +317,18 @@ body {
   color: var(--second-text-color);
 }
 
-/* підвал */
-.footer {
-  background: var(--footerbackground-color);
-}
-.footer-logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--accent-color);
-}
-.footer-logowhite {
-  color: var(--accent-color-text);
-}
-.footer-address {
-  font-style: inherit;
-}
-
-.footer-streat {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-text-color);
-}
-.footer-item > a:hover,
-.footer-item > a:focus {
-  color: var(--accent-color);
-}
-.footermail-link,
-.footertel-link {
-  letter-spacing: 0.03em;
-  color: var(--footer-text);
-  text-decoration: none;
-}
-
 /* css index */
 
 /* ефективне рішення */
 .efect {
-  padding-top: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--background-efect);
 }
 .texth1 {
-  padding-top: 200px;
+  /* padding-top: 200px; */
+  /* padding-bottom: 200px; */
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 696px;
@@ -376,7 +345,7 @@ body {
 .button-zakaz {
   display: inline-block;
   padding: 10px 32px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   border: 0px solid transparent;
   font-family: inherit;
   font-weight: 700;
@@ -399,14 +368,12 @@ body {
   background-color: var(--background-buttom-zakaz-hover);
 }
 /* особливості */
-/* .special {
-  padding-top: 0px;
-} */
+
 .title-list {
   display: flex;
 }
 .special-big {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -421,7 +388,7 @@ body {
   color: var(--second-text-color);
 }
 .special-item:not(:last-child) {
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 /* чим ми займаємося */
@@ -477,14 +444,14 @@ body {
 } */
 
 .card {
+  border-radius: var(--border-radius-card-team);
   box-shadow: var(--box-shadow-team);
 }
 .card-content {
+  text-align: center;
   padding: 30px 0px;
 }
 .teamtext-big {
-  padding-left: 60px;
-  padding-right: 59px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -492,9 +459,47 @@ body {
   color: var(--primary-text-color);
 }
 .teamtext-small {
-  padding-left: 70px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: var(--second-text-color);
+}
+
+/* підвал */
+.footer {
+  background: var(--footerbackground-color);
+}
+.footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+.footer-logowhite {
+  color: var(--accent-color-text);
+}
+.footer-address {
+  font-style: inherit;
+}
+.footer-item > .footermail-link {
+  margin-top: 30px;
+}
+.footer-streat {
+  margin-top: 20px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-text-color);
+}
+.footer-item > a:hover,
+.footer-item > a:focus {
+  color: var(--accent-color);
+}
+.footermail-link,
+.footertel-link {
+  letter-spacing: 0.03em;
+  color: var(--footer-text);
+  text-decoration: none;
 }
