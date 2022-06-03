@@ -475,16 +475,11 @@ body {
 .footer-address {
   font-style: inherit;
 }
-.footer-item {
-  margin-bottom: 9px;
-}
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
 .footer-streat {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--footer-text-color);
 }
 .footer-item > a:hover,
