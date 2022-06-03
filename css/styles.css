@@ -31,7 +31,6 @@
   --background-header: #ffffff;
   --background-efect: #2f303a;
   --background-ourteam-color: #f5f4fa;
-  --border-card-project-line: 1px solid #eeeeee;
   --background-buttom: #f5f4fa;
   --background-buttom-accent: #2196f3;
   --background-buttom-zakaz-hover: #188ce8;
@@ -44,7 +43,7 @@
   --background-color: #ffffff;
   --background-box: #ffffff;
   --background-img-team: #ffffff;
-  --border-color: #eeeeee;
+  --border-card-project-line: 1px solid #eeeeee;
   --footerbackground-color: #2f303a;
   --footer-text: rgba(255, 255, 255, 0.6);
   --footer-text-color: #ffffff;
@@ -110,41 +109,43 @@ body {
   padding: 94px 0px;
   /* background-color: orange; */
 }
-/* логотип WebStudio */
+/* ------------- логотип WebStudio -------------*/
 .header-navig {
   display: flex;
-  align-items: center;
 }
 .header-nav {
   display: flex;
-  margin-left: 93px;
-  /* align-items: center; */
+  align-items: center;
 }
 .header-logo {
-  color: var(--accent-color);
-
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  padding: 24px 0 25px 0;
+  margin-right: 93px;
+
+  color: var(--accent-color);
 }
 .header-logoblack {
   color: var(--primary-text-color);
 }
 
-/* навігація Студия */
+/* --------------- навігація Студия -------------*/
 .header-item:not(:last-child) {
   margin-right: 50px;
-  /* outline: 1px solid red; */
 }
+/* або через селектор сусіда */
+/* .header .header-item + .header-item {
+  margin-left: 50px;
+} */
 .headerlink {
-  display: block;
   padding: 32px 0;
-
-  color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
 }
 .headerlink.current {
   color: var(--accent-color);
@@ -161,15 +162,14 @@ body {
   margin-left: auto;
   align-items: center;
 }
-/* .header-nav .header-item + .header-item { bgc 
-  margin-left: 50px;
-} */
 .headermail,
 .headertel {
+  padding: 32px 0;
   cursor: pointer;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
   color: var(--second-text-color);
 }
 
@@ -198,8 +198,10 @@ body {
 .filter {
   display: flex;
   margin-right: 8px;
+  margin-bottom: 50px;
   padding: 6px 22px;
   border-radius: 4px;
+  justify-content: center;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -208,14 +210,6 @@ body {
   cursor: pointer;
 
   color: var(--primary-text-color);
-  /* background: var(--background-buttom); */
-}
-.filter .filter-item + .filter-item {
-  margin-right: 8px;
-}
-.filterbuttom {
-  margin-left: 280px;
-  margin-bottom: 50px;
 }
 .vse {
   min-width: 73px;
@@ -280,7 +274,7 @@ body {
   background-color: var(--background-buttom-accent);
 }
 
-/* project  сєтка*/
+/* ------------ PROJECT  SITKA -----------*/
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -293,15 +287,12 @@ body {
   flex-basis: calc(100% / 3 - var(--box-cards-gap));
 
   background: var(--background-box);
-  /* border: 1px solid var(--border-color); */
+  border: var(--border-card-project-line);
 }
 
-/* CARD SET PROJECT*/
+/*------------------ CARD SET PROJECT ---------------*/
 .card-content-project {
   padding: 20px 24px;
-}
-.card-project {
-  border: var(--border-card-project-line);
 }
 .project-big {
   margin-bottom: 4px;
@@ -317,9 +308,9 @@ body {
   color: var(--second-text-color);
 }
 
-/* css index */
+/*------------------- css index --------------*/
 
-/* ефективне рішення */
+/* -------------- ефективне рішення --------------*/
 .efect {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -327,8 +318,6 @@ body {
   background-color: var(--background-efect);
 }
 .texth1 {
-  /* padding-top: 200px; */
-  /* padding-bottom: 200px; */
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 696px;
@@ -341,11 +330,12 @@ body {
   color: var(--accent-color-text);
 }
 
-/* кнопка */
+/*------------ кнопка -------------*/
 .button-zakaz {
   display: inline-block;
+  min-width: 200px;
+  height: 50px;
   padding: 10px 32px;
-  /* margin-bottom: 200px; */
   border: 0px solid transparent;
   font-family: inherit;
   font-weight: 700;
@@ -354,8 +344,6 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  min-width: 200px;
-  height: 50px;
 
   box-shadow: var(--box-shadow-buttom-studio);
   border-radius: 4px;
@@ -367,10 +355,16 @@ body {
   color: var(--accent-color-text);
   background-color: var(--background-buttom-zakaz-hover);
 }
-/* особливості */
 
+/*----------------- особливості ----------------*/
 .title-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--box-cards-gap));
+}
+.title-list > .special-item {
+  margin-left: var(--box-cards-gap);
+  flex-basis: calc(100% / 4 - var(--box-cards-gap));
 }
 .special-big {
   margin-bottom: 10px;
@@ -387,11 +381,8 @@ body {
   line-height: 1.71;
   color: var(--second-text-color);
 }
-.special-item:not(:last-child) {
-  margin-right: 30px;
-}
 
-/* чим ми займаємося */
+/*------------ чим ми займаємося -------------*/
 .chem {
   padding-top: 0px;
 }
@@ -413,7 +404,6 @@ body {
 
 /* наша команда */
 .ourteam {
-  padding-top: 0px;
   background: var(--background-ourteam-color);
 }
 
@@ -467,11 +457,12 @@ body {
 
 /* підвал */
 .footer {
+  padding: 60px 0;
   background: var(--footerbackground-color);
 }
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -484,11 +475,14 @@ body {
 .footer-address {
   font-style: inherit;
 }
-.footer-item > .footermail-link {
-  margin-top: 30px;
+.footer-item {
+  margin-bottom: 9px;
 }
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-streat {
-  margin-top: 20px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
