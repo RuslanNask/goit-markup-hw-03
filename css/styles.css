@@ -330,13 +330,13 @@ body {
 /*------------------- css index --------------*/
 
 /* -------------- ефективне рішення --------------*/
-.efect {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--background-efect);
 }
-.texth1 {
+.hero-text {
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 696px;
